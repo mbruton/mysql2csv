@@ -14,7 +14,7 @@ struct linked_list *linked_list_init(void *item) {
     linked_list->next = NULL;
     linked_list->previous = NULL;
     linked_list->item = item;
-    
+
     meta = malloc(sizeof(struct linked_list_meta));
     linked_list->meta = meta;
     meta->current = linked_list;
